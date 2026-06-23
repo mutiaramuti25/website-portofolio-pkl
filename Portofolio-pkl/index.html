@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Mutiara Ramadhani</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">mutiararamadhani</div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#home" class="nav-link" data-lang="nav.home">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link" data-lang="nav.about"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="nav-link" data-lang="nav.projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#certificate"
+                class="nav-link"
+                data-lang="nav.certificate"
+                >Certificate</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-lang="nav.contact"
+                >Contact</a
+              >
+            </li>
+            <li class="lang-selector">
+              <div class="lang-dropdown">
+                <button class="lang-btn" id="langBtn">
+                  <i class="fas fa-globe"></i>
+                  <span id="currentLangText">EN</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="lang-options" id="langOptions">
+                  <li data-value="en">English</li>
+                  <li data-value="id">Indonesia</li>
+                  <li data-value="zh">Chinese</li>
+                  <li data-value="ja">Japanese</li>
+                  <li data-value="ko">Korean</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero reveal">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text reveal-left">
+            <p class="greeting" data-lang="hero.greeting">Halo Semua, Saya</p>
+            <h1 class="hero-title">Mutiara Ramadhani</h1>
+            <p class="hero-subtitle" data-lang="hero.subtitle">
+              Seorang Siswa di SMKN 1 CIOMAS
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary" data-lang="nav.contact"
+                >Kontak</a
+              >
+              <button
+                id="viewCvBtn"
+                class="btn btn-secondary"
+                data-lang="hero.downloadcv"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
+          <div class="hero-image reveal-right">
+            <div class="profile-circle">
+              <img src="assets/img/profile.jpg" alt="Profile" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="about" class="tentang">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" data-lang="about.title">Tentang Saya</h2>
+        </div>
+        <div class="tentang-content reveal">
+          <div class="tentang-right">
+            <h3 class="about-name">Mutiara Ramadhani</h3>
+            <p class="about-description" data-lang="about.desc">
+              Halo, perkenalkan saya Mutiara Ramadhani, siswi SMK Negeri 1
+              Ciomas jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Saya
+              memiliki minat dalam bidang UI/UX dan administrasi. Saya mampu
+              mengolah dan menyusun data menjadi informasi yang terstruktur
+              untuk mendukung perancangan tampilan yang mudah dipahami dan
+              user-friendly. Selain itu, saya terbiasa bekerja secara teliti,
+              rapi, dan sistematis dalam mengelola data maupun dokumen.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">2+</div>
+                <div class="stat-label" data-lang="about.stat1">
+                  Tahun Belajar
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">3+</div>
+                <div class="stat-label" data-lang="about.stat2">Sertifikat</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">3+</div>
+                <div class="stat-label" data-lang="about.stat3">
+                  Proyek Selesai
+                </div>
+              </div>
+            </div>
+
+            <div class="about-buttons">
+              <a
+                href="assets/img/cv.jpg"
+                download="CV-Mutiara-Ramadhani.jpg"
+                class="btn btn-primary"
+                data-lang="about.downloadcv"
+              >
+                <i class="fas fa-download"></i> Unduh CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" data-lang="tools.title">
+            Tools Yang Digunakan
+          </h2>
+          <p class="section-description" data-lang="tools.desc">
+            Berikut adalah tools yang biasa digunakan untuk pengembangan website
+          </p>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-card reveal">
+            <img src="assets/img/vscode.jpg" alt="VS Code" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.vscode">Visual Studio Code</h4>
+              <p data-lang="tool.desc1">Code Editor</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/html.jpg" alt="HTML" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.html">HTML</h4>
+              <p data-lang="tool.desc2">Language</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/css.jpg" alt="CSS" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.css">CSS</h4>
+              <p data-lang="tool.desc3">Language</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img
+              src="assets/img/boostrap.jpg"
+              alt="Bootstrap"
+              class="tool-logo"
+            />
+            <div class="tool-info">
+              <h4 data-lang="tool.bootstrap">Bootstrap</h4>
+              <p data-lang="tool.desc4">Framework</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/js.jpg" alt="Javascript" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.js">Javascript</h4>
+              <p data-lang="tool.desc5">Language</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/github.jpg" alt="Github" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.github">Github</h4>
+              <p data-lang="tool.desc6">Repository</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/canva.jpg" alt="Canva" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.canva">Canva</h4>
+              <p data-lang="tool.desc7">Design App</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/figma.jpg" alt="Figma" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.figma">Figma</h4>
+              <p data-lang="tool.desc8">Design Tool</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/php.jpg" alt="PHP" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.php">PHP</h4>
+              <p data-lang="tool.desc9">Language</p>
+            </div>
+          </div>
+          <div class="tool-card reveal">
+            <img src="assets/img/mysql.jpg" alt="MySQL" class="tool-logo" />
+            <div class="tool-info">
+              <h4 data-lang="tool.mysql">MySQL</h4>
+              <p data-lang="tool.desc10">Database</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="project">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" data-lang="projects.title">Projects</h2>
+          <p class="section-description" data-lang="projects.desc">
+            Berikut adalah beberapa proyek yang saya kerjakan selama studi saya
+            di SMKN 1 Ciomas di program PPLG (Pengembangan Perangkat Lunak dan
+            Gim).
+          </p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/img/project1.jpg"
+                alt="Warung Sembako Pa Ruslan"
+                onclick="openProjectModal('assets/img/project1.jpg')"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Warung Sembako Pa Ruslan</h3>
+              <p data-lang="project1.desc">
+                Sistem kasir lengkap untuk warung sembako pa ruslan.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('assets/img/project1.jpg')"
+                  data-lang="projects.view"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/img/project2.jpg"
+                alt="School Management System"
+                onclick="openProjectModal('assets/img/project2.jpg')"
+              />
+            </div>
+            <div class="project-content">
+              <h3>School Management System</h3>
+              <p data-lang="project2.desc">
+                Sistem untuk mencatat data siswa, guru, dan peminjaman di
+                sekolah.
+              </p>
+
+              <div class="project-buttons">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('assets/img/project2.jpg')"
+                  data-lang="projects.view"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/img/project3.jpg"
+                alt="SmartSchool Exam Skanic"
+                onclick="openProjectModal('assets/img/project3.jpg')"
+              />
+            </div>
+            <div class="project-content">
+              <h3>SmartSchool Exam Skanic</h3>
+              <p data-lang="project3.desc">
+                Smartschool exam skanic website ujian online sekolah.
+              </p>
+              <div class="project-buttons">
+                <button
+                  onclick="openProjectModal('assets/img/project3.jpg')"
+                  class="project-btn"
+                  data-lang="projects.view"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificate" class="sertifikat">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" data-lang="cert.title">Sertifikat Saya</h2>
+        </div>
+        <div class="certificate-grid">
+          <div class="certificate-card reveal">
+            <div class="cert-image">
+              <img
+                src="assets/img/sertifikat1.jpg"
+                alt="Web Programming Basics"
+                data-cert="assets/img/sertifikat1.jpg"
+                onclick="openCertificateModal('assets/img/sertifikat1.jpg')"
+              />
+            </div>
+            <h3 data-lang="cert1.title">Web Programming Basics Certificate</h3>
+            <button
+              class="cert-detail-btn"
+              onclick="openCertificateModal('assets/img/sertifikat1.jpg')"
+              data-lang="cert.view"
+            >
+              View Details
+            </button>
+          </div>
+          <div class="certificate-card reveal">
+            <div class="cert-image">
+              <img
+                src="assets/img/sertifikat2.jpg"
+                alt="Basic JavaScript Programming"
+                data-cert="assets/img/sertifikat2.jpg"
+                onclick="openCertificateModal('assets/img/sertifikat2.jpg')"
+              />
+            </div>
+            <h3 data-lang="cert2.title">
+              Basic JavaScript Programming Certificate
+            </h3>
+            <button
+              class="cert-detail-btn"
+              onclick="openCertificateModal('assets/img/sertifikat2.jpg')"
+              data-lang="cert.view"
+            >
+              View Details
+            </button>
+          </div>
+          <div class="certificate-card reveal">
+            <div class="cert-image">
+              <img
+                src="assets/img/sertifikat3.jpg"
+                alt="Beginner Front-end"
+                data-cert="assets/img/sertifikat3.jpg"
+                onclick="openCertificateModal('assets/img/sertifikat3.jpg')"
+              />
+            </div>
+            <h3 data-lang="cert3.title">Beginner Front-end Certificate</h3>
+            <button
+              class="cert-detail-btn"
+              onclick="openCertificateModal('assets/img/sertifikat3.jpg')"
+              data-lang="cert.view"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="kontak">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" data-lang="contact.title">Hubungi Saya</h2>
+          <p class="section-subtitle" data-lang="contact.subtitle">
+            Ada pertanyaan atau ingin bekerja sama? Kirim pesan di bawah ini!
+          </p>
+        </div>
+
+        <div class="kontak-wrapper">
+          <div class="kontak-right reveal">
+            <div class="kontak-form-card">
+              <form class="kontak-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label data-lang="form.name">Nama</label>
+                    <input
+                      id="nama"
+                      type="text"
+                      placeholder="Nama kamu..."
+                      data-lang="form.namePlaceholder"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label data-lang="form.email">Email Kamu</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="email@kamu.com"
+                      data-lang="form.emailPlaceholder"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-lang="form.subject">Subjek</label>
+                  <input
+                    id="subjek"
+                    type="text"
+                    placeholder="Tentang apa?"
+                    data-lang="form.subjectPlaceholder"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label data-lang="form.message">Pesan</label>
+                  <textarea
+                    id="pesan"
+                    placeholder="Tuliskan pesanmu di sini..."
+                    data-lang="form.messagePlaceholder"
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  data-lang="form.send"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section"></div>
+
+          <div class="footer-section">
+            <h4 data-lang="footer.links">Links</h4>
+            <ul>
+              <li><a href="#home" data-lang="nav.home">Home</a></li>
+              <li><a href="#about" data-lang="nav.about">About Me</a></li>
+              <li><a href="#projects" data-lang="nav.projects">Projects</a></li>
+              <li>
+                <a href="#certificate" data-lang="nav.certificate"
+                  >Certificate</a
+                >
+              </li>
+              <li><a href="#contact" data-lang="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 data-lang="footer.follow">Follow Me</h4>
+            <div class="social-icons-footer">
+              <a href="tel:+6289521958537" class="social-icon-footer">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a
+                href="mailto:ramadhanimutiara0925@gmail.com"
+                class="social-icon-footer"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/mutiara-ramadhani-a31139405"
+                class="social-icon-footer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/mutiaramuti25"
+                class="social-icon-footer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://instagram.com/tiaraamrdh_"
+                class="social-icon-footer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            <span data-lang="footer.created">Created by</span>
+            <strong>Mutiara Ramadhani</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="cv-modal">
+      <div class="cv-modal-content">
+        <div class="cv-modal-header">
+          <h2>My CV</h2>
+          <button class="cv-modal-close">&times;</button>
+        </div>
+        <div class="cv-modal-body">
+          <img
+            id="cvImage"
+            src="assets/img/cv.jpg"
+            alt="CV Mutiara Ramadhani"
+          />
+        </div>
+        <div class="cv-modal-footer">
+          <a
+            href="assets/img/cv.jpg"
+            download
+            class="btn btn-primary"
+            data-lang="hero.downloadcv"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+      <div class="project-modal-content">
+        <button class="project-modal-close" onclick="closeProjectModal()">
+          &times;
+        </button>
+        <div class="project-modal-container">
+          <button class="modal-nav-btn prev" onclick="changeProjectImage(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div id="projectImagesContainer" class="project-images-container">
+            <!-- Image inserted by JS -->
+          </div>
+          <button class="modal-nav-btn next" onclick="changeProjectImage(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+      <div class="cert-modal-content">
+        <button class="cert-modal-close" onclick="closeCertificateModal()">
+          &times;
+        </button>
+        <img id="certImage" src="" alt="Certificate" />
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
